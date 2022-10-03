@@ -3,7 +3,7 @@ import shutil
 
 
 downloads_location = Path.home() / "Downloads"
-file_extensions = ['mp4', 'webm', 'jpeg', 'jpg', 'png', 'pdf', '7z', 'bz2', 'gz', 'zip', 'gif']
+file_extensions = ['mp4', 'webm', 'jpeg', 'jpg', 'png', 'pdf', '7z', 'bz2', 'gz', 'zip', 'gif', 'rar']
 video_location = Path.home() / "Videos"
 image_location = Path.home() / "Pictures"
 pdf_location = Path.home() / "Documents" / 'pdfs'
@@ -25,7 +25,7 @@ for extension in file_extensions:
             shutil.move(file, image_location)
          case 'pdf':
             shutil.move(file, pdf_location)
-         case '7z' | 'bz2' | 'gz' | 'zip':
+         case '7z' | 'bz2' | 'gz' | 'zip' | 'rar':
             shutil.move(file, zip_location)
 
 print("Finished moving files.")
