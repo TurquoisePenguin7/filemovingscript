@@ -10,8 +10,8 @@ pdf_location = Path.home() / "Documents" / 'pdfs'
 zip_location = Path.home() / "Documents" / 'zips'
 
 try:
-    pdf_location.mkdir(exists=False)
-    zip_location.mkdir(exists=False)
+    pdf_location.mkdir(exist_ok=False)
+    zip_location.mkdir(exist_ok=False)
 except FileExistsError as e:
     print(f"Directory {e} exists, skipping...")
     
