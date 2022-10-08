@@ -43,7 +43,7 @@ class CleaningFiles:
          print(f"Directory {e} exists, skipping folder creation...")
    
    def _check_file_formats(self):
-      """Checking file formats, stripping theit suffixes, checking them in the extensions dictionary, skip it if not in dictionary and moving them to the location.
+      """Checking file formats, stripping their suffixes, checking them in the extensions dictionary, skip it if not in dictionary and moving them to the location.
          You can add your own extensions if needed.
       """
 
