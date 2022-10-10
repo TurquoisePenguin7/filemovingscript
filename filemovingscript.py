@@ -50,7 +50,7 @@ class CleaningFiles:
       for file in DOWNLOADS_LOCATION.glob("*"):
          file_suffix = str(file.suffix).strip('.')
          folder_location = file_extensions.get(file_suffix)
-         if folder_location == None:
+         if folder_location is None:
             continue
          shutil.move(file, folder_location)
          print(f"Moving {file} to {folder_location}")
